@@ -7,16 +7,15 @@
     <title>Satellites</title>
     <meta name="description" content="GPS project">
     <meta name="author" content="Władysław Jakołcewicz">
-
-    <link rel="stylesheet" href="styles/main.css">
+    {% block head %}
+    {% endblock %}
+    
 
 </head>
 
 <body>
-    
-    <div id="info">Description</div>
-    <script src="js/three.js"></script>
-    <script type="module" src="js/main.js"></script>
 
+{% block content %}
+{% endblock %}
 </body>
 </html>
