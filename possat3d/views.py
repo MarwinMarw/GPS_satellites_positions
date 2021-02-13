@@ -13,6 +13,6 @@ def index():
 
 @app.route("/get_data", methods=['GET'])
 def get_model():
-    filename = os.path.join(app.config['RINEX_FILES_FOLDER'], '940779326P-3.18N')
+    filename = os.path.join(app.config['RINEX_FILES_FOLDER'], 'gmez0380.21n')
     processed_pos = satpos.process_RINEX_file(filename)
     return jsonify(processed_pos)

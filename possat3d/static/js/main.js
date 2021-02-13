@@ -35,7 +35,7 @@ class Satellite{
 	constructor(dirScene, name, position){
 
 		this.name = name;
-		gltfLoader.load('static/3d_models/Satellite.glb', (object) => {
+		gltfLoader.load('static/3d_models/satLite.glb', (object) => {
 			this.scaleConst = 1000000
 			this.SATELLITE = object;	
 			this.SATELLITE.scene.rotateZ(1.5);
@@ -52,8 +52,8 @@ class Satellite{
 }
 
 
-gltfLoader.load('static/3d_models/Earth/scene.gltf', (object) => {
-	object.scene.scale.set(0.003, 0.003, 0.003);
+gltfLoader.load('static/3d_models/earthLite.glb', (object) => {
+	object.scene.scale.set(2.0, 2.0, 2.0);
 	PLANET = object;	
 	
 	scene.add(PLANET.scene);
